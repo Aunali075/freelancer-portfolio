@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aun | Web Developer</title>
+  <meta name="description"
+    content="Aun – A front-end web developer creating sleek, responsive websites with modern tech and elegant design." />
+  <meta name="keywords" content="Web Developer, Front-end, HTML, CSS, JavaScript, Portfolio, Freelance" />
+  <meta name="author" content="Aun" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation CSS (Optional if you're using AOS) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS Animation Script (Optional) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+    });
+  </script>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Aun Ali</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h2>Hello, I'm <span class="highlight">Aun Ali</span></h2>
+      <p>A passionate Front-End Developer</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <img src="images/launchlabs-thumbnail.jpg.png" alt="LaunchLabs Project">
+          <h3>LaunchLabs</h3>
+          <p>A modern tech agency landing page with animations and Netlify form integration.</p>
+          <a href="https://launchlabstechagency.netlify.app/" target="_blank" class="cta-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="images/skysync-thumbnail.jpg.png" alt="SkySync Project">
+          <h3>SkySync</h3>
+          <p>A sleek and responsive business site, optimized for performance and user experience.</p>
+          <a href="https://skysync-landing-page.netlify.app/" target="_blank" class="cta-button">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Git & Github</div>
+        <div class="skill-card">Netlify</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>If you have a project in or just want to say hi, feel free to reach out!</p>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Aun Ali. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
